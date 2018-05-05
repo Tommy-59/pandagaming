@@ -16,3 +16,16 @@ bot.on('message', message => {
     message.reply('pong !')
   }
 })
+
+bot.on("guildMemberAdd", member => {
+    member.guild.channels.find("name", "pandagaming").send(` Bienvenue sur PandaGaming! Passez un bon moment ici! ${member}`)
+})
+
+bot.on("guildMemberRemove", member => {
+    member.guild.channels.find("name", "pandagaming").send(`${member} vien de quitter du serveur PandaGaming`)
+})
+
+bot.on('guildMemberAdd' , member => {
+    var role = member.guild.roles.find('name','Membres' );
+    member.addRole(role)
+})
