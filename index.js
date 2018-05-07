@@ -24,8 +24,3 @@ bot.on("guildMemberAdd", member => {
 bot.on("guildMemberRemove", member => {
     member.guild.channels.find("name", "pandagaming").send(`${member} vien de quitter du serveur PandaGaming`)
 })
-
-bot.on('guildMemberAdd' , Nouveau / Nouvelle => {
-    var role = member.guild.roles.find('name','Nouveau / Nouvelle' );
-    member.addRole(role)
-})
