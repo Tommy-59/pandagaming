@@ -18,9 +18,9 @@ bot.on('message', message => {
 })
 
 bot.on("guildMemberAdd", member => {
-    member.guild.channels.find("name", "panthersgaming").send(` Bienvenue sur PandaGaming! Passez un bon moment ici! ${member}`)
+    member.guild.channels.find("name", "pandagaming").send(` Bienvenue sur PanthersGaming! Passez un bon moment ici! ${member}`)
 })
 
 bot.on("guildMemberRemove", member => {
-    member.guild.channels.find("name", "panthersgaming").send(`${member} vien de quitter du serveur PandaGaming`)
+    member.guild.channels.find("name", "pandagaming").send(`${member} vien de quitter du serveur PanhersGaming`)
 })
